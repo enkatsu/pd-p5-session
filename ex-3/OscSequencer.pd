@@ -1,11 +1,11 @@
-#N canvas 0 35 906 566 12;
+#N canvas 29 110 906 566 12;
 #X obj 61 22 netreceive -u -b 12000;
 #X obj 61 47 oscparse;
 #X obj 61 71 list trim;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array sound2 44100 float 0;
 #X coords 0 1 44099 -1 200 140 1 0 0;
-#X restore 298 200 graph;
+#X restore 327 200 graph;
 #X obj 61 442 output~;
 #X obj 61 96 route sound;
 #X obj 61 124 unpack i;
@@ -21,35 +21,35 @@
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array sound0 44100 float 0;
 #X coords 0 1 44099 -1 200 140 1 0 0;
-#X restore 297 34 graph;
+#X restore 326 34 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array sound1 44100 float 0;
 #X coords 0 1 44099 -1 200 140 1 0 0;
-#X restore 512 34 graph;
+#X restore 541 34 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array sound3 44100 float 0;
 #X coords 0 1 44099 -1 200 140 1;
-#X restore 513 200 graph;
-#X obj 448 374 openpanel;
-#X obj 448 353 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X restore 542 200 graph;
+#X obj 477 374 openpanel;
+#X obj 477 353 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 448 459 soundfiler;
-#X obj 307 374 openpanel;
-#X obj 307 353 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 477 459 soundfiler;
+#X obj 336 374 openpanel;
+#X obj 336 353 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 307 459 soundfiler;
-#X obj 307 403 list append sound0;
-#X obj 729 373 openpanel;
-#X obj 729 352 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 336 459 soundfiler;
+#X obj 336 403 list append sound0;
+#X obj 758 373 openpanel;
+#X obj 758 352 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 729 458 soundfiler;
-#X obj 588 373 openpanel;
-#X obj 588 352 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 758 458 soundfiler;
+#X obj 617 373 openpanel;
+#X obj 617 352 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 588 458 soundfiler;
-#X obj 448 403 list append sound1;
-#X obj 588 402 list append sound2;
-#X obj 729 402 list append sound3;
+#X obj 617 458 soundfiler;
+#X obj 477 403 list append sound1;
+#X obj 617 402 list append sound2;
+#X obj 758 402 list append sound3;
 #X obj 83 272 tabplay~ sound1;
 #X obj 61 304 tabplay~ sound0;
 #X obj 61 336 +~;
@@ -57,10 +57,18 @@
 #X obj 133 216 tabplay~ sound3;
 #X obj 61 368 +~;
 #X obj 61 395 +~;
-#X msg 729 430 read \$1 \$2;
-#X msg 588 430 read \$1 \$2;
-#X msg 448 431 read \$1 \$2;
-#X msg 307 431 read \$1 \$2;
+#X msg 758 430 read \$1 \$2;
+#X msg 617 430 read \$1 \$2;
+#X msg 477 431 read \$1 \$2;
+#X msg 336 431 read \$1 \$2;
+#X obj 193 416 openpanel;
+#X obj 193 395 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 140 449 print;
+#X obj 193 456 list append sound0;
+#X msg 193 484 read \$1 \$2;
+#X obj 141 481 print;
+#X obj 140 518 print;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 5 0;
@@ -98,3 +106,9 @@
 #X connect 39 0 27 0;
 #X connect 40 0 17 0;
 #X connect 41 0 20 0;
+#X connect 42 0 44 0;
+#X connect 42 0 45 0;
+#X connect 43 0 42 0;
+#X connect 45 0 46 0;
+#X connect 45 0 47 0;
+#X connect 46 0 48 0;
