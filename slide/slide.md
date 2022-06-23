@@ -42,17 +42,17 @@ paginate: true
 
 # サンプルコード紹介
 
-- ex-1
+- ex1
     - マウスの座標を送受信する
-- ex-2
+- ex2
     - マウスの座標を送受信して音とグラフィックに反映する
-- ex-3
+- ex3
     - OSCシーケンサー
     - OSCが送られてきたら対応する音を鳴らす
 
 ---
 
-# ex-1
+# ex1
 ## マウスの座標を送受信する
 
 - SendMousePosition (Processing)
@@ -62,7 +62,7 @@ paginate: true
 
 ---
 
-# ex-2
+# ex2
 ## マウスの座標を送受信して音とグラフィックに反映する
 
 - SendMousePosition (Processing)
@@ -77,7 +77,7 @@ paginate: true
 
 ---
 
-# ex-3
+# ex3
 ## OSCシーケンサー
 
 - OscSequencer (Processing)
@@ -91,7 +91,7 @@ paginate: true
 
 ---
 
-# ex-1
+# ex1
 
 ---
 
@@ -164,7 +164,7 @@ void mouseMoved() {
 img[alt=ex1-pd] { width: 650px; }
 </style>
 
-![ex1-pd](./images/ex-1/pd.png)
+![ex1-pd](./images/ex1/pd.png)
 
 ---
 
@@ -181,11 +181,11 @@ img[alt=ex1-pd] { width: 650px; }
 
 ---
 
-![](./images/ex-1/result.png)
+![](./images/ex1/result.png)
 
 ---
 
-# ex-2
+# ex2
 
 ---
 
@@ -273,7 +273,7 @@ PdはProcessingの画面サイズを知らないので、
 img[alt=ex1-pd] { width: 650px; }
 </style>
 
-![ex1-pd](./images/ex-2/pd.png)
+![ex1-pd](./images/ex2/pd.png)
 
 ---
 
@@ -303,11 +303,11 @@ img[alt=ex1-pd] { width: 650px; }
 
 ---
 
-![](./images/ex-2/result.png)
+![](./images/ex2/result.png)
 
 ---
 
-# ex-3
+# ex3
 
 ---
 
@@ -321,7 +321,7 @@ img[alt=ex1-pd] { width: 650px; }
 img[alt=ex1-pd] { width: 650px; }
 </style>
 
-![ex1-pd](./images/ex-3/pd.png)
+![ex1-pd](./images/ex3/pd.png)
 
 ---
 
@@ -354,7 +354,7 @@ img[alt=ex1-pd] { width: 650px; }
 
 ---
 
-![](./images/ex-3/result.png)
+![](./images/ex3/result.png)
 
 ---
 
